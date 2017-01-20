@@ -1,0 +1,250 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+
+
+
+
+.main-head
+	//border: 1px solid black
+	background-image: url(../img/top_bg.jpg)
+	min-height: 620px
+	background-size: cover
+	background-position: center
+	position: relative
+	padding-bottom: 120px
+	color: $headers-color
+
+	.top-line
+		height: 195px
+		
+
+	.logo
+		img
+			width: 250px
+	
+
+	.right-attributes
+		position: relative
+		text-align: right
+		span
+			font-family: "FontAwesome"
+			color: $main-color
+			font-size: em(20px)
+			
+
+		p
+			color: $headers-color
+			font-family: "RobotoBold", $helvetica
+			font-size: em(18px)
+			display: inline-block
+			line-height: 52px
+			margin: 0 0 0 10px
+	
+		.work-time, .phone
+			display: inline-block
+			margin-left: 46px
+
+	.main-mnu
+		font-size: em(16px)
+		position: absolute
+		right: 15px
+		top: 24px
+		z-index: 2
+		font-family: "RalewayRegular"
+	ul
+		@extend .ulmnu
+	li
+		line-height: 48px
+		padding: 0 10px
+
+		display: block
+		&:hover,
+		&.active
+			a
+				color: $main-color
+					
+
+		&.active
+			a
+				border-bottom: 3px solid $main-color
+		a
+			transition: all .5s ease
+			text-decoration: none !important
+			color: #fff
+			padding-bottom: 19px
+		
+
+
+	.border-bottom
+		border-bottom: 1px solid #7a7473
+		padding-bottom: 4px
+	
+	.toggle-mnu
+		display: inline-block
+		float: right
+		position: absolute
+		top: 22px
+		right: 18px
+
+/* Important styles */
+.toggle-mnu  
+	display: block
+	width: 28px	
+	height: 28px
+	margin: 22px auto 0
+
+
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+
+.toggle-mnu span:after
+	top: 9px
+
+.toggle-mnu span 	 
+	position: relative
+	display: block
+
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+	width: 100%
+	height: 2px
+	background-color: #fff
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+
+/* on activation */
+.toggle-mnu.on span 
+	background-color: transparent
+
+.toggle-mnu.on span:before 
+	transform: rotate(45deg) translate(5px, 5px)
+
+.toggle-mnu.on span:after 
+	transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle-mnu.on + #menu 
+	opacity: 1
+	visibility: visible
+
+
+
+ /*top-header*/
+
+.forms
+	background-color: transparentize(#252d3a,.2)
+	padding: 30px 30px 30px
+	color: #97a4b2 
+	font-size: em(14px)
+	border-bottom: 4px solid #1f2b37
+	margin-top: 30px
+	h4
+		font-family: "RobotoBold", $helvetica
+		font-size: em(28px)
+		margin-bottom: 10px
+		text-transform: none
+	p
+		color: #89a1ab
+		font-family: "Roboto"
+		line-height: em(22px)
+		margin-top: 15px
+
+	span
+		display: block
+		font-family: "Roboto", $helvetica
+		color: #717d8b
+		font-size: em(16px)
+		letter-spacing: 1.5px
+		margin-bottom: 4px
+
+	label
+		margin-top: 10px
+		margin-bottom: 10px
+		display: block
+
+	input
+		font-family: "PFCentroSlabProMedium", $helvetica
+		display: block
+		font-size: em(18px)
+		width: 100%
+		border: none
+		box-shadow: 0 -4px #1f2b37
+		background-color: #34465a
+		text-indent: 10px
+		padding: 10px 0
+		color: #fff !important
+		transition: all .5s ease
+		&:focus
+			box-shadow: 0 -6px $main-color
+			background-color: #394e65
+
+	.button-wrap
+		margin-top: 26px
+
+
+.button-wrap
+	text-align: center
+
+
+.header-wrap
+	.header-left
+		text-align: center
+		margin-top: 90px
+		h1
+			font-family: "PFCentroSlabProBold", $helvetica
+			font-size: em(42px)
+
+	ul
+		text-align: left
+		margin-top: 50px
+		li
+			display: block
+			line-height: em(32px)
+			font-family: "fontAwesome"
+			span
+				color: $main-color
+				font-size: em(18px)
+
+			
+			margin-left: 50px
+			a
+				font-family: "RalewayRegular", $helvetica
+				letter-spacing: em(2.75px)
+				font-size: em(19px)
+				margin-left: 10px
+				&:hover
+					text-decoration: underline !important
+	
+
+		
+			
+
+
+
+
+
+	
+
+
+
+
+

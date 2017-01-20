@@ -1,0 +1,320 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.main-mnu
+		display: none
+		float: right
+		text-align: right
+		position: absolute
+		right: 0
+		top: 60px !important
+		min-width: 293px
+		float: right
+		margin-top: 20px
+		position: absolute
+		background-color: #1c242c
+		ul
+			li
+				display: block
+				padding: 0
+				margin: 0
+				line-height: 0
+				a
+					display: block;
+					padding: 0 20px
+					line-height: 48px
+					background-color: transparent
+					transition: all .5s ease
+					font-size: em(19px)
+					&:hover
+						background-color: #273646
+
+	.section-1			
+		.section-content
+			.questra-desc
+				font-size: em(17px)
+			.buttons
+				bottom: -30px
+				right: 20px
+	
+	.section-head
+		h2
+			&::after
+				left: 90%
+				transform: translate(-75%, 0)
+	.sh-part2
+		h2
+			&::after
+				left: 50%
+				transform: translate(-50%, 0px)
+
+	.section-3
+		.s3-items
+			.s3-item
+				.icon
+				p
+					font-size: em(16px) 
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.main-head
+		.main-mnu
+			top: 54px !important
+		.logo
+			img
+				width: 230px !important
+	.header-wrap
+		.header-left
+			margin: 20px 0 50px 0 
+
+	.section-1			
+		.section-content
+			margin-top: 30px
+			.img-wrap
+				img
+					width: 350px
+
+			.questra-desc
+				font-size: em(17px)
+				margin-top: 40px
+			.buttons
+				bottom: -50px
+				right: 20px
+	
+	.section-head
+		text-align: center
+		h2
+			&::after
+				left: 50%
+				transform: translate(-50%, 0)
+
+	.sc-part2
+		.ob-items
+			display: inline-block
+			.ob-item
+				margin-bottom: 36px
+				max-width: 500px
+				p
+					&::after
+						left: 52%
+						transform: traslate(-50%, 0)
+				a
+					left: 75px
+
+	.sh-part2
+		h2
+			margin-top: 100px
+	.sc-part2
+		padding-top: 36px
+
+	.section-bottom
+		padding-bottom: 25px
+
+
+	.section-3
+		.s3-items
+			.s3-item
+				
+				.icon
+					font-size: em(38px)
+				p
+					font-size: em(12px)
+
+	
+
+
+			
+					
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.main-head
+		.main-mnu
+			top: 40px !important
+		.logo
+			img
+				width: 180px !important
+		.toggle-mnu
+			top: 12px
+	.header-wrap
+		.header-left
+			h1
+				font-size: em(36px)
+
+	.section-content
+		.questra-desc
+			.buttons
+				right: 40%
+				bottom: -70px
+
+	
+
+	.section-3
+		.s3-items
+			.s3-item
+				
+				.icon
+					font-size: em(40px)
+				p
+					font-size: em(15px)
+					letter-spacing: 2px
+
+	.section-4
+		.section-head
+		text-align: center
+		h2
+			&::after
+				left: 10%
+				transform: translate(-50%, 0)
+
+			
+
+
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.main-head
+		.top-line
+			margin-bottom: 0
+			height: 144px
+		.border-bottom
+			border-bottom: none
+		.logo
+			img
+				width: 160px !important
+		.toggle-mnu
+			top: 4px
+		.right-attributes
+			p
+				line-height: 38px
+			.phone
+				margin-right: 22px
+
+
+	.header-wrap
+		.header-left
+			margin-top: 0
+			h1
+				font-size: em(30px)
+			a
+				font-size: em(18px)
+				letter-spacing: em(1px)
+			li
+				margin-left: 0
+
+	.section-content
+		.img-wrap
+			img
+				width: 300px !important
+
+		.questra-desc
+			.buttons
+				right: 34%
+				bottom: -70px
+
+
+
+
+	.sc-part2
+		margin-top: 0 !important
+		.ob-items
+			.ob-item
+				height: 480px
+				width: 280px
+				.img-wrap
+					margin-bottom: 0
+					
+					img
+						width: 100% !important
+						height: 80%
+				h4
+					margin-top: 0
+
+				a
+					left: 55px
+					bottom: 30px
+				p
+					padding-bottom: 0
+					&::after
+						bottom: -60px
+
+	.section-bottom
+		padding-bottom: 50px
+		p
+			padding-left: 14px
+			font-size: em(13px)
+
+	.section-4
+		.s4-items
+			.s4-item
+				display: inline-block
+				width: 90%
+
+	
+	
+				
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.main-mnu
+		display: block !important
+		a
+			outline: none
+
